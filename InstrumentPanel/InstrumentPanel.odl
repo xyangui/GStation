@@ -1,0 +1,81 @@
+// InstrumentPanel.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (InstrumentPanel.tlb) that will become a resource in
+// InstrumentPanel.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(C194EF78-D6C6-4433-A5FD-B08E1E7AAB7D), version(1.0),
+  helpfile("InstrumentPanel.hlp"),
+  helpstring("InstrumentPanel ActiveX Control module"),
+  control ]
+library INSTRUMENTPANELLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CInstrumentPanelCtrl
+
+	[ uuid(9B91C551-22A6-441D-A68A-A48B5E85B3EA),
+	  helpstring("Dispatch interface for InstrumentPanel Control"), hidden ]
+	dispinterface _DInstrumentPanel
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CInstrumentPanelCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_BACKCOLOR), bindable, requestedit] OLE_COLOR BackColor;
+			[id(1)] short FyDeg;
+			[id(2)] short GzDeg;
+			[id(3)] short Direction;
+			[id(4)] short ApHeight;
+			[id(5)] short AimHeight;
+			[id(6)] short AirSpeed;
+			[id(7)] short AimAirSpeed;
+			[id(8)] short AimDirection;
+			[id(9)] float Heading;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CInstrumentPanelCtrl)
+			[id(10)] void UpDate(short gzDeg, short fyDeg, short direction, short aimDirection, short airSpeed, short aimAirSpeed, short apHeight, short aimHeight, float heading);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CInstrumentPanelCtrl
+
+	[ uuid(51C7353B-DE07-49A6-B578-1C91D8603DBC),
+	  helpstring("Event interface for InstrumentPanel Control") ]
+	dispinterface _DInstrumentPanelEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CInstrumentPanelCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CInstrumentPanelCtrl
+
+	[ uuid(9542050C-6B62-4250-865F-46579FA576B8),
+	  helpstring("InstrumentPanel Control"), control ]
+	coclass InstrumentPanel
+	{
+		[default] dispinterface _DInstrumentPanel;
+		[default, source] dispinterface _DInstrumentPanelEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

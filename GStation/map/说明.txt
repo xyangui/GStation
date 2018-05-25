@@ -1,0 +1,16 @@
+_p为polygon
+_l为polylin
+_t为几个点，无用
+
+bou2，省界和国界
+diqujie,地区界
+hyd1,1级河流,需要使用hyd_l和hyd_p
+hyd2,2级河流,需要使用hyd_l和hyd_p
+rai_4ml，铁路
+res1_4p,省会城市（可以不用了，如果用就要用大城市的标志）
+res2_4p,大城市含省会城市
+river4,4级河流
+river5,5级河流
+roa_4ml，主要公路（无标注）
+xianch,县城
+xianjie,县界

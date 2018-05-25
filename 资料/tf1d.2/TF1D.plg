@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TF1D - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/TF1D.res" /d "_DEBUG" /d "_AFXDLL" "F:\fwz\tf1d\TF1D.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TF1D.pdb" /debug /machine:I386 /out:"Release/TF1D.exe" /pdbtype:sept 
+.\Debug\_meter.obj
+.\Debug\air.obj
+.\Debug\AirToZeroDlg.obj
+.\Debug\AltSetDlg.obj
+.\Debug\BTSetDlg.obj
+.\Debug\ButtonXP.obj
+.\Debug\commondialog.obj
+.\Debug\commondialog1.obj
+.\Debug\Data.obj
+.\Debug\DownPoints.obj
+.\Debug\LineComputerDlg.obj
+.\Debug\LyersctrDlg.obj
+.\Debug\MAPX.OBJ
+.\Debug\mscomm.obj
+.\Debug\MyMiniFrm.obj
+.\Debug\PhotoSetDlg.obj
+.\Debug\picture.obj
+.\Debug\PortsetDlg.obj
+.\Debug\PotdataDlg.obj
+.\Debug\RangePod.obj
+.\Debug\SafesetDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TF1D.obj
+.\Debug\TF1DDlg.obj
+.\Debug\toolBarEX.obj
+.\Debug\UAVSetDlg.obj
+.\Debug\TF1D.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP34.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+TF1D.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

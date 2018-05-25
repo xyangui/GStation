@@ -1,0 +1,82 @@
+// InstrumentCircle.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (InstrumentCircle.tlb) that will become a resource in
+// InstrumentCircle.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(20660637-120E-4548-B406-D5DC39D554F0), version(1.0),
+  helpfile("InstrumentCircle.hlp"),
+  helpstring("InstrumentCircle ActiveX Control module"),
+  control ]
+library INSTRUMENTCIRCLELib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CInstrumentCircleCtrl
+
+	[ uuid(14E2FEE7-6904-4433-8472-BE07EAF2F7B3),
+	  helpstring("Dispatch interface for InstrumentCircle Control"), hidden ]
+	dispinterface _DInstrumentCircle
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CInstrumentCircleCtrl)
+			[id(1)] short MimDeg;
+			[id(2)] short MaxDeg;
+			[id(3)] short MinValue;
+			[id(4)] short MaxValue;
+			[id(5)] short DivCount;
+			[id(6)] double RealValue;
+			[id(7)] double AimValue;
+			[id(8)] double NumberFont;
+			[id(9)] double LabFont;
+			[id(10)] long LabX;
+			[id(11)] long LabY;
+			[id(12)] BSTR LabText;
+			[id(13)] BSTR LabTextLine2;
+			[id(14)] long LabX2;
+			[id(15)] long LabY2;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CInstrumentCircleCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CInstrumentCircleCtrl
+
+	[ uuid(3DF0103C-7B57-4E36-A271-F0D306E45DD1),
+	  helpstring("Event interface for InstrumentCircle Control") ]
+	dispinterface _DInstrumentCircleEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CInstrumentCircleCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CInstrumentCircleCtrl
+
+	[ uuid(74DE98EE-DE61-46C1-AA56-9616C1E49E90),
+	  helpstring("InstrumentCircle Control"), control ]
+	coclass InstrumentCircle
+	{
+		[default] dispinterface _DInstrumentCircle;
+		[default, source] dispinterface _DInstrumentCircleEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

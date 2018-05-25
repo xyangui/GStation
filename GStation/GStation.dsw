@@ -1,0 +1,32 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "GStation"=".\GStation.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {9542050C-6B62-4250-865F-46579FA576B8}
+    {74DE98EE-DE61-46C1-AA56-9616C1E49E90}
+    {B6C10489-FB89-11D4-93C9-006008A7EED4}
+}}}
+
+###############################################################################
+

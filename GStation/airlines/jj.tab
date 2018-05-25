@@ -1,0 +1,15 @@
+!table
+!version 450
+!charset WindowsSimpChinese
+
+Definition Table
+  Description "WayPointStation"
+  Type Native charset "WindowsSimpChinese"
+  Fields 7
+    num integer ;
+    altitude integer ;
+    speed integer ;
+    radius integer ;
+    flag smallint ;
+    time smallint ;
+    servo smallint ;

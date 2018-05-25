@@ -1,0 +1,16 @@
+!table
+!version 300
+!charset WindowsSimpChinese
+
+Definition Table
+  Type NATIVE Charset "WindowsSimpChinese"
+  Fields 9
+    FNODE_ Integer ;
+    TNODE_ Integer ;
+    LPOLY_ Integer ;
+    RPOLY_ Integer ;
+    LENGTH Float ;
+    BOUNTG_ Integer ;
+    BOUNTG_ID Integer ;
+    SHARE Decimal (6, 0) ;
+    GBCODE Decimal (6, 0) ;

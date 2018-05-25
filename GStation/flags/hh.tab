@@ -1,0 +1,9 @@
+!table
+!version 450
+!charset WindowsSimpChinese
+
+Definition Table
+  Description "Sign"
+  Type Native charset "WindowsSimpChinese"
+  Fields 1
+    label char (100) ;
